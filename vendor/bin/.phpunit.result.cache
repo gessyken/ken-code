@@ -1,0 +1,1 @@
+{"version":1,"defects":{"KenOrmsMethodTest::testFindOrFail":7,"KenOrmsMethodTest::testDelete":7},"times":{"KenOrmsMethodTest::testAll":0.008,"KenOrmsMethodTest::testCreate":0.049,"KenOrmsMethodTest::testFind":0.004,"KenOrmsMethodTest::testFindOrFail":0.009,"KenOrmsMethodTest::testSave":0.029,"KenOrmsMethodTest::testDelete":0.005}}

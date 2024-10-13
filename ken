@@ -1,0 +1,34 @@
+#!/usr/bin/env php
+
+<!-- (^_^) my artisan cli copy -->
+ 
+<?php
+
+function migrate() {
+    $migrationFiles = glob('Migrations/*.php'); // Récupère tous les fichiers de migration
+
+    foreach ($migrationFiles as $file) {
+        require_once $file; // Inclut chaque fichier de migration
+        
+    }
+}
+
+function makeModel($modelName) {
+    $modelTemplate = "<?php\n\nclass $modelName {\n    // Code du modèle ici\n}\n";
+    $modelPath = "Use/$modelName.php"; // Chemin où le modèle sera créé
+
+    if (!file_exists($modelPath)) {
+        file_put_contents($modelPath, $modelTemplate); // Crée le fichier du modèle
+        echo "Modèle $modelName créé avec succès.\n";
+    } else {
+        echo "Le modèle $modelName existe déjà.\n";
+    }
+}
+
+if (isset($argv[1]) && $argv[0] === 'migrate') {
+    migrate();
+}
+
+if (isset($argv[1]) && $argv[0] === 'make:model') {
+    makeModel($argv[1]); // Crée le modèle avec le nom passé en argument
+}
