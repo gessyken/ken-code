@@ -1,31 +1,23 @@
----
+# 🌐 KEN-CODE - PHP Framework
 
-# 🌍 KEN-ORM - PHP Framework
+Welcome to **KEN-CODE**, a lightweight PHP framework created with the purpose of learning and growing together.  
+This project is designed to explore key PHP concepts while encouraging **collaboration** for both educational purposes and enjoyment.
 
-Welcome to **KEN-ORM**, a minimalistic PHP framework I'm building as a learning tool.  
-The goal is to explore and understand core PHP concepts such as:
+- 🧑‍💻 Dive into **Object-Oriented Programming (OOP)**
+- ⚙️ Work with **PHP Data Objects (PDO)** for database interactions
+- 🚀 Explore **Migrations** and database version control
+- And much more!
 
-- 🧑‍💻 **Object-Oriented Programming (OOP)**
-- 🛠️ **PHP Data Objects (PDO)** for database interactions
-- 🚀 **Migrations** and database management
-- Plus, other important fundamentals.
-
-> **Note:** This framework is **not** designed for production use.  
-> It's purely educational and inspired by the elegant architecture of **Laravel**.
+> **Note:** KEN-CODE is not intended for production environments, but rather as a playground for **learning** and **experimentation**, heavily inspired by **Laravel**.
 
 ---
 
-### 🚧 Project Status
+### 💡 Why KEN-CODE?
 
-This project is under active development as a personal journey to deepen my understanding of PHP. Expect ongoing changes and experiments.
+KEN-CODE is more than just a PHP framework—it's a **learning community**.  
+Whether you're here to sharpen your PHP skills or to have fun experimenting, you’re welcome to contribute!
 
-### 📚 Learning Focus Areas
-
-- Modular architecture for better code organization
-- Clean and readable code
-- Basic routing, controllers, and views
-- Database migrations using PDO
-- Error handling and debugging
+We believe in the power of open-source collaboration to enhance knowledge and development skills.
 
 ---
 
@@ -37,20 +29,36 @@ This project is under active development as a personal journey to deepen my unde
 
 ---
 
-### 🚀 Get Started
+### 🚀 Getting Started
 
 ```bash
 # Clone the repository
-git clone https://github.com/gessyken/ken-orm.git
+git clone https://github.com/gessyken/ken-code.git
 
 # Navigate into the project directory
-cd ken-orm
+cd ken-code
 
 # Install dependencies
 composer install
 
-# Start learning and building!
+# Start exploring and contributing!
 ```
+
+---
+
+### 🤝 Contributing
+
+Want to join the KEN-CODE journey? Whether you're here to learn or contribute for fun, we welcome you!  
+Feel free to open issues, submit pull requests, or share your thoughts on how we can improve the framework together.
+
+---
+
+### 📞 Contact
+
+For any questions, ideas, or collaboration opportunities, feel free to reach out:
+
+- 📧 Email: gessyken@gmail.com  
+- 🌐 Website: [kencode.dev](https://kencode.dev)
 
 ---
 
@@ -60,6 +68,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-Feel free to clone, experiment, and share your thoughts! 👨‍💻
+Let’s build, learn, and grow together with **KEN-CODE**! 🌱👨‍💻
 
 ---
