@@ -3,15 +3,20 @@
 require_once 'DB.php';
 
 /**
- * @method static all()
- * @method static create(array $data)
- * @method static find(int $id)
- * @method static findOrFail(int $id)
+ * @method static all() : array
+ * @method static create(array $data) : object | null
+ * @method static find(int $id) : object | null
  * @method save()
- * @method delete()
+ * @method delete() : bool
  */
 abstract class KenOrm
 {
+    protected static $table;
+    protected static $fillable = [
+        'id',
+        'created_at',
+        'updated_at'
+    ];
     /**
      * @return array
      */
@@ -55,6 +60,7 @@ abstract class KenOrm
      */
     public static function create(array $data)
     {
+        $data = array_intersect_key($data, array_flip(static::$fillable));
         $table = strtolower(get_called_class() . 's');
         $sql = "INSERT INTO {$table} (";
         foreach ($data as $key => $value) {
@@ -116,11 +122,15 @@ abstract class KenOrm
     /**
      * @return void
      */
-    public function delete()
+    public function delete() : bool
     {
         $table = strtolower(get_called_class() . 's');
         $db = DB::mysql();
         $stmt = $db->prepare("DELETE FROM {$table} WHERE id = :id");
-        $stmt->execute([':id' => $this->id]);
+        
+        if($stmt->execute([':id' => $this->id])){
+            return true;
+        }
+        return false;
     }
 }
